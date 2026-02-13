@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Hearts akan di-generate oleh JS -->
+
+    <!-- Navigation -->
+    <nav>
+        <h1>Valentine 2024</h1>
+        <ul>
+            <li><a onclick="showSection('home')">Pesan</a></li>
+            <li><a onclick="showSection('game')">Mini Game</a></li>
+            <li><a onclick="showSection('gallery')">Memories</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="letter-container">
+                <div class="letter-wrapper">
+                    <div class="envelope" id="envelope" onclick="openLetter()">
+                        <div class="envelope-flap"></div>
+                        <div class="letter-content">
+                            <h2>Untuk Kamu ❤️</h2>
+                            <p>
+                                Setiap hari bersamamu adalah hari Valentine bagiku.
+                                Terima kasih telah menjadi alasan senyumku,
+                                cahaya dalam gelap, dan kebahagiaan dalam hidupku.
+                                <br><br>
+                                Aku bersyukur memilikimu.
+                                <br><br>
+                                Happy Valentine's Day! 💕
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="click-instruction" id="instruction">
+                    ✨ Klik amplop untuk membuka pesan ✨
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Section -->
+        <section id="game" class="section">
+            <div class="game-container">
+                <h2>Memory Card Game 💝</h2>
+                <p style="color: #d63384; margin-bottom: 1rem;">Temukan pasangan yang cocok!</p>
+                
+                <div class="game-board" id="gameBoard"></div>
+                
+                <div class="game-stats">
+                    <div>Gerakan: <span id="moves">0</span></div>
+                    <div>Pasangan: <span id="matches">0</span>/8</div>
+                </div>
+                
+                <button class="reset-btn" onclick="resetGame()">Main Lagi</button>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section">
+            <h2 class="gallery-title">Kenangan Bersama</h2>
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <h3>Saat Pertama Bertemu</h3>
+                    <p>Hari itu aku tahu, hidupku akan berubah selamanya. Senyummu adalah hal pertama yang membuatku jatuh hati.</p>
+                </div>
+                <div class="gallery-card">
+                    <h3>Kencan Pertama</h3>
+                    <p>Gugup, senang, dan bahagia bercampur jadi satu. Waktu seolah berhenti saat kita berdua bersama.</p>
+                </div>
+                <div class="gallery-card">
+                    <h3>Petualangan Kita</h3>
+                    <p>Setiap perjalanan bersamamu adalah petualangan yang tak terlupakan. Dari tawa hingga tangis, semuanya indah.</p>
+                </div>
+                <div class="gallery-card">
+                    <h3>Hari Ini & Selamanya</h3>
+                    <p>Terima kasih telah memilihku. Aku berjanji akan selalu ada untukmu, di saat suka maupun duka.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
